@@ -1,0 +1,52 @@
+[
+  {
+    "entryId": "M001",
+    "userId": "CUST001",
+    "date": "2026-01-16",
+    "nepaliDate": "2083-09-33",
+    "liters": 5,
+    "rate": 83,
+    "total": 415,
+    "time": "morning"
+  },
+  {
+    "entryId": "M002",
+    "userId": "CUST001",
+    "date": "2026-01-16",
+    "nepaliDate": "2083-09-33",
+    "liters": 5,
+    "rate": 83,
+    "total": 415,
+    "time": "morning"
+  },
+  {
+    "entryId": "M006",
+    "userId": "CUST002",
+    "date": "2026-01-16",
+    "nepaliDate": "2083-09-33",
+    "liters": 6,
+    "rate": 66,
+    "total": 396,
+    "time": "morning"
+  },
+  {
+    "entryId": "M007",
+    "userId": "CUST002",
+    "date": "2026-01-16",
+    "nepaliDate": "2083-09-33",
+    "liters": 6,
+    "rate": 66,
+    "total": 396,
+    "time": "morning"
+  },
+  {
+    "entryId": "M008",
+    "userId": "CUST002",
+    "date": "2026-01-17",
+    "nepaliDate": "2083-09-34",
+    "liters": 6,
+    "rate": 88,
+    "total": 528,
+    "time": "morning"
+  }
+]
