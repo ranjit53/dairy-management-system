@@ -1,0 +1,20 @@
+[
+  {
+    "userId": "ADMIN001",
+    "name": "Admin",
+    "password": "admin123",
+    "role": "admin"
+  },
+  {
+    "userId": "CUST001",
+    "name": "Ramesh",
+    "password": "1234",
+    "role": "customer"
+  },
+  {
+    "userId": "CUST002",
+    "name": "ranjit",
+    "password": "1234",
+    "role": "customer"
+  }
+]

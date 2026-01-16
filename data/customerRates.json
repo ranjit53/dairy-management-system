@@ -1,0 +1,17 @@
+[
+  {
+    "userId": "CUST001",
+    "rate": 83,
+    "effectiveDate": "2026-01-16"
+  },
+  {
+    "userId": "CUST002",
+    "rate": 66,
+    "effectiveDate": "2026-01-16"
+  },
+  {
+    "userId": "CUST002",
+    "rate": 88,
+    "effectiveDate": "2026-01-17"
+  }
+]
