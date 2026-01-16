@@ -69,18 +69,35 @@ export function readJsonFile<T>(filePath: string): T {
   }
   
   try {
+    // Log path for debugging on Vercel
+    if (process.env.NODE_ENV === 'development') {
+      console.log(`Attempting to read file: ${filePath}`);
+      console.log(`Current working directory: ${process.cwd()}`);
+    }
+    
     if (!fs.existsSync(filePath)) {
       console.warn(`File does not exist: ${filePath}`);
+      console.warn(`Current working directory: ${process.cwd()}`);
+      console.warn(`Data directory: ${DATA_DIR}`);
       return [] as unknown as T;
     }
+    
     const fileContent = fs.readFileSync(filePath, 'utf-8');
     if (!fileContent || fileContent.trim() === '') {
       console.warn(`File is empty: ${filePath}`);
       return [] as unknown as T;
     }
-    return JSON.parse(fileContent) as T;
-  } catch (error) {
+    
+    const parsed = JSON.parse(fileContent) as T;
+    if (process.env.NODE_ENV === 'development') {
+      console.log(`Successfully read file: ${filePath}`);
+    }
+    return parsed;
+  } catch (error: any) {
     console.error(`Error reading file ${filePath}:`, error);
+    console.error(`Error details: ${error.message}`);
+    console.error(`Current working directory: ${process.cwd()}`);
+    console.error(`Data directory: ${DATA_DIR}`);
     return [] as unknown as T;
   }
 }
